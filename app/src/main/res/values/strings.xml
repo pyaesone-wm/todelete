@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToDelete</string>
+    <string name="msg_generic_no_data">No Data to Display</string>
+</resources>

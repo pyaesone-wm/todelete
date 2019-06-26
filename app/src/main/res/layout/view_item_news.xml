@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="4dp"
+    android:foreground="@drawable/ripple_white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iv_news_hero_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_news_hero_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="New York approves statewide plastic bag ban - CBS News"
+            android:textColor="@color/black_full"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_news_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/grey_goose_lighter" />
+
+        <TextView
+            android:id="@+id/tv_news_publisher_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_separator"
+            android:layout_alignLeft="@id/tv_news_title"
+            android:layout_toLeftOf="@id/tv_news_published_date"
+            android:text="The New York Times"
+            android:textColor="@color/black_full"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_news_published_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_separator"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="2019-04-23"
+            android:textColor="@color/black_full"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
